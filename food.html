@@ -1,0 +1,105 @@
+<html>
+<head>
+<link rel="stylesheet" href="food.css">
+</head>
+<body bgcolor="goldenrod">
+<div class="a">
+ <div class="b">
+ <div class="q">
+   <h1> PEDIGREE</h1></div>
+    <ul>
+      <li><a href="home.html">HOME</a></</li>
+      <li><a href="breeds.html">BREEDS</a></li>
+	  <li>FOOD</li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+ </div>
+</div>
+<form style="background-color:black;color:white;font-size:30px;margin-top:20px; margin-bottom:15px;
+margin-left:500px;margin-right:500px; border-radius:20px;"><b>DOG FOODS</b>
+<select onchange="f(this.value)" style= "width:113px;height:24px;font-size:20px;font-family:Tahoma;">
+<option Value="food.html">-SELECT-</option>
+<option Value="dry.html">Dry Food</option>
+<option Value="wet.html">Wet food</option>
+<option Value="treats.html">Treats</option>
+</select>
+</form>
+<script>
+function f(src)
+{
+
+window.location=src;
+
+}
+</script>
+<div class="side">
+<div class="slideimg"> 
+<!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1"checked>
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+
+        <!--radio buttons end--
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="img\f1.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="img\f2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="img\f3.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="img\f4.jpg" alt="">
+        </div>
+
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 4500);</script>
+</div>
+<div class="text">
+<ul type="square">
+<li>We believe in healthy food</li><br>
+<li>Happy pet and happy us</li><br>
+<li>Give them extra care</li><br>
+<li>Real Food, Real Love</li><br>
+</ul>
+</div>
+</div>
+</body>
+</html>
